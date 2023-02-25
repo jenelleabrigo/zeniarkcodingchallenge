@@ -5,7 +5,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Context>
-        <Component {...pageProps} />;
+        <Component {...pageProps} />
       </Context>
     </>
   );
