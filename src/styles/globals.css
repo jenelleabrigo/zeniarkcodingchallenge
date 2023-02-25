@@ -1,0 +1,162 @@
+:root {
+  --max-width: 1100px;
+  --border-radius: 12px;
+  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New",
+    monospace;
+
+  --primary-blue: #085696;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+html,
+body {
+  font-family: "Poppins", sans-serif;
+  max-width: 100vw;
+  overflow-x: hidden;
+  color: #000;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+}
+
+/* COMPONENTS */
+
+.main {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.6rem;
+  min-height: 100vh;
+  background: url("../images/common/bg.png") center center/cover;
+}
+
+.container {
+  width: 90rem;
+  background: #ffffff;
+  box-shadow: 0px 0px 20px rgba(11, 113, 145, 0.15);
+  border-radius: 1rem;
+  padding: 2rem 5rem 4rem;
+}
+
+.link {
+  display: inline-block;
+  position: relative;
+  margin-top: 5rem;
+  color: var(--primary-blue);
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 5.2rem;
+  letter-spacing: -0.04em;
+  transition: 0.3s;
+}
+.link:hover {
+  opacity: 0.7;
+}
+.link::after {
+  position: absolute;
+  content: "";
+  height: 0.4rem;
+  width: 100%;
+  background: var(--primary-blue);
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: 0;
+}
+
+.subpage-heading {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #e3e3e3;
+  padding-bottom: 2rem;
+}
+.subpage-heading__logo {
+  position: relative;
+  left: -2.8rem;
+}
+.subpage-heading__txt-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+.subpage-heading__txt-container.is-center {
+  justify-content: center;
+}
+.subpage-heading__txt-container__txt {
+  font-weight: 600;
+  font-size: 2.5rem;
+  line-height: 3.8rem;
+  letter-spacing: 0.005em;
+}
+.subpage-heading__txt-container__txt.is-big {
+  font-size: 3rem;
+  line-height: 3.6rem;
+}
+.subpage-heading__txt-container__count {
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: 0.005em;
+}
+
+/* UTILITIES */
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+.u-text-green {
+  color: #83db14;
+}
+
+.u-text-red {
+  color: #e33131;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 750px) {
+  .container {
+    width: 100%;
+  }
+
+  .link {
+    font-size: 2rem;
+  }
+
+  .subpage-heading__logo {
+    left: 0;
+    margin-right: 2rem;
+  }
+  .subpage-heading__txt-container {
+    display: block;
+  }
+  .subpage-heading__txt-container__txt {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+}

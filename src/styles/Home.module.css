@@ -1,0 +1,59 @@
+.container {
+  padding: 11rem;
+}
+
+.text_logo {
+  margin-bottom: 4rem;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 3.5rem;
+  line-height: 5.2rem;
+  letter-spacing: 0.005em;
+}
+
+.text {
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  letter-spacing: 0.005em;
+  padding-bottom: 5rem;
+}
+
+.blue_box {
+  display: block;
+  margin: auto;
+  border: none;
+  outline: none;
+  background: var(--primary-blue);
+  border-radius: 1.5rem;
+  color: #fff;
+  font-weight: 500;
+  font-size: 3.5rem;
+  line-height: 5.2rem;
+  letter-spacing: -0.04em;
+  padding: 1.5rem;
+  max-width: 52.3rem;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 750px) {
+  .container {
+    padding: 2rem;
+  }
+  .title {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    margin-bottom: 1.5rem;
+  }
+  .blue_box {
+    font-size: 2rem;
+    line-height: 1.5;
+  }
+  .text_logo img {
+    width: 100%;
+    height: auto;
+  }
+}

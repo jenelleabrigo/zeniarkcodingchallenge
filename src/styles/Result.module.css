@@ -1,0 +1,75 @@
+.container {
+  /* min-height: 70rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; */
+}
+
+.score_container {
+  padding: 3rem 0;
+  border-bottom: 1px solid #e3e3e3;
+}
+.score_container__number {
+  font-weight: 400;
+  font-size: 5rem;
+  line-height: 6.7rem;
+  text-align: center;
+  letter-spacing: 0.005em;
+  margin-bottom: 1.4rem;
+}
+.score_container__text {
+  font-weight: 500;
+  font-size: 2.2rem;
+  line-height: 3.3rem;
+  text-align: center;
+  letter-spacing: 0.005em;
+}
+
+.result_container__item {
+  padding: 1.9rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px dashed #e3e3e3;
+}
+.result_container__item__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.result_container__item__num {
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  letter-spacing: 0.005em;
+  color: #9d9d9d;
+  width: 2.5rem;
+  margin-right: 0.8rem;
+}
+.result_container__item__text__question {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1.9rem;
+  letter-spacing: 0.005em;
+  margin-bottom: 1rem;
+}
+.result_container__item__text__conc {
+  display: block;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.7rem;
+  letter-spacing: 0.005em;
+  color: #a5a5a5;
+}
+.result_container__item__text__conc__correct {
+  font-weight: bold;
+}
+
+/* MEDIA QUERY */
+
+@media only screen and (max-width: 750px) {
+  .container {
+    padding: 2rem 2rem 4rem;
+  }
+  .result_container__item {
+    flex-direction: column;
+  }
+}
