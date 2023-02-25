@@ -11,9 +11,12 @@ npm install
 Create a copy of the env file
 ```bash
 cp .env.example .env
+##OR
+copy .env.example .env
 ```
 
 To start the server
+
 Note: You may change the port in the `.env` file depending on what port you are running the server (default is 3000)
 ```bash
 npm run dev
