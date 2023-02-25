@@ -1,4 +1,4 @@
-##Steps in setting up this project in local.
+## Steps in setting up this project in local.
 
 Clone this project to your local environment and go to the project directory.
 
